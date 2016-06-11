@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="myCanvas" width="600" height="400"></canvas>
+<script>
+    var c=document.getAnonymousElementById("myCanvas");
+    var cxt= c.getContext("2d");
+    var img=new Image();
+    img.src="1.jpg";
+    img.onload=function(){
+        cxt.drawImage(img,0,0);
+    }
+    function draw(){
+        cxt.clearRect(0,0,600,400);
+        cxt.save();
+        cxt.translate(600/2*Math.random(),400/2*Math.random());
+        cxt.drawImage(img,0,0);
+        cxt.restore();
+    }
+</script>
+</body>
+</html>

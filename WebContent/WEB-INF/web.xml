@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+  <servlet-name>Ch3 Beer</servlet-name>
+  <servlet-class>location.skip</servlet-class>
+  </servlet>
+  
+
+  
+  <servlet-mapping>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <url-pattern>/select.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>product</servlet-name>
+  <servlet-class>productManage.getProduct</servlet-class>
+  </servlet>
+  
+
+  
+  <servlet-mapping>
+    <servlet-name>product</servlet-name>
+    <url-pattern>/product.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>loogin</servlet-name>
+  <servlet-class>userManage.Loogin</servlet-class>
+  </servlet>
+
+
+<servlet-mapping>
+<servlet-name>loogin</servlet-name>
+<url-pattern>/helpLoogin</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+  <servlet-name>buy</servlet-name>
+  <servlet-class>productManage.buy</servlet-class>
+  </servlet>
+
+
+<servlet-mapping>
+<servlet-name>buy</servlet-name>
+<url-pattern>/buy.do</url-pattern>
+</servlet-mapping>
+  <servlet>
+  <servlet-name>search</servlet-name>
+  <servlet-class>productManage.search</servlet-class>
+  </servlet>
+
+
+<servlet-mapping>
+<servlet-name>search</servlet-name>
+<url-pattern>/search.do</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+  <servlet-name>addshoppingcart</servlet-name>
+  <servlet-class>productManage.addshoppingcart</servlet-class>
+  </servlet>
+
+
+<servlet-mapping>
+<servlet-name>addshoppingcart</servlet-name>
+<url-pattern>/addshoppingcart.do</url-pattern>
+</servlet-mapping>
+
+</web-app>
